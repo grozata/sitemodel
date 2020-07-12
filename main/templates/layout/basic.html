@@ -13,7 +13,7 @@
     {% load static %}
     <link rel="stylesheet" type="text/css" href=" {% static 'main/css/style.css' %}">
 
-    <title>{% block title %} Main {% endblock %} - Slibrary</title>
+    <title>{% block title %} Home {% endblock %} - Slibrary</title>
   </head>
 
   <body>
@@ -28,7 +28,7 @@
         <h1 class="logo-text my-auto ml-3">GHOST</h1>
         <div class="ml-auto my-auto">
           <a class="btn menu_button " href="{% url 'main:index' %}">Home</a>
-          <a class="btn menu_button " href="{% url 'main:other' page='shop' %}">Shop</a>
+          <a class="btn menu_button " href="{% url 'main:other' page='sales' %}">Sales</a>
           <a class="btn menu_button " href="{% url 'main:other' page='news' %}">News</a>
           <a class="btn menu_button " href="{% url 'main:other' page='about' %}">About Us</a>
           <a class="menu_button" href="{% url 'main:other' page='favorites' %}">
@@ -86,7 +86,7 @@
         </div>
         <div class="footer-copyright d-flex justify-content-center align-items-center flex-wrap">
           <p class="footer-text m-0">
-            Copyright ©2020 All rights reserved 
+            Copyright ©2020 | GHOST | All rights reserved 
           </p>
         </div>
       </div>

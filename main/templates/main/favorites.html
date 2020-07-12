@@ -1,1 +1,26 @@
-favorites.html
+{% extends "layout/basic.html" %}
+
+{% block title %}Favorites{% endblock %}
+
+{% block content %}
+
+{% load static %}
+<div class="container">
+	<div class="jumbotron">
+	  <h1 class="display-4">Hello, world!</h1>
+	  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+	  <hr class="my-4">
+	  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+	  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+	</div>
+
+	<nav aria-label="breadcrumb">
+	  <ol class="breadcrumb">
+	    <li class="breadcrumb-item"><a href="{% url 'main:index' %}">Home</a></li>
+	    <li class="breadcrumb-item active" aria-current="page">Favorites</li>
+	  </ol>
+	</nav>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae reprehenderit distinctio unde consectetur, atque praesentium dolores asperiores ullam dignissimos voluptatem aliquid labore ex quae vero quas ipsum ratione vel veniam voluptas minus doloribus ducimus eveniet quaerat! Cum, nam minima doloribus repellat vel ipsa inventore consequatur similique vero harum, odit unde molestiae, optio accusantium dignissimos facere? Dolorem laboriosam sit est eaque praesentium, itaque iure asperiores omnis et quidem fuga officiis consequuntur quibusdam repellendus minima, maiores ipsa nisi molestias nihil temporibus. Numquam voluptatibus consequuntur, labore eligendi expedita non sunt distinctio corporis blanditiis? Libero, facilis, reiciendis. Quisquam, doloremque nobis tempore omnis delectus quibusdam?</p>
+</div>
+{% endblock %}
