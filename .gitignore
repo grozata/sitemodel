@@ -1,0 +1,7 @@
+*.pyc
+*~
+__pycache__
+myvenv
+sitemodel.data
+/static
+.DS_Store
