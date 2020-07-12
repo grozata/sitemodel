@@ -1,5 +1,5 @@
-{% load static %}
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -9,11 +9,90 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+    
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href=" {% static 'main/css/style.css' %}">
 
+    <title>{% block title %} Main {% endblock %} - Slibrary</title>
+  </head>
+
+  <body>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'main/img/favicon2.png' %}">
+
+    <nav class="shadow-navbar site-header sticky-top py-1" style="height: 80px;">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" href="{% url 'main:index' %}" aria-label="Product">
+          <img src="{% static 'main/img/logo_ghost.jpg' %}" style="height: 50px;">
+        </a>
+        
+        <h1 class="logo-text my-auto ml-3">GHOST</h1>
+        <div class="ml-auto my-auto">
+          <a class="btn menu_button " href="{% url 'main:index' %}">Home</a>
+          <a class="btn menu_button " href="{% url 'main:other' page='shop' %}">Shop</a>
+          <a class="btn menu_button " href="{% url 'main:other' page='news' %}">News</a>
+          <a class="btn menu_button " href="{% url 'main:other' page='about' %}">About Us</a>
+          <a class="menu_button" href="{% url 'main:other' page='favorites' %}">
+            <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-heart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+            </svg>
+          </a>
+
+          <a class="menu_button">
+            <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+              <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+            </svg>
+          </a>
+
+          <a class="">
+            <svg width="25" height="25" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M13 14s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h10zm-9.995-.944v-.002.002zM3.022 13h9.956a.274.274 0 0 0 .014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664a1.05 1.05 0 0 0 .022.004zm9.974.056v-.002.002zM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer class="footer-area footer-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <h6>About Us</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fugiat deserunt aperiam, ab illum ducimus.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <h6>About Us</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fugiat deserunt aperiam, ab illum ducimus.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <h6>About Us</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fugiat deserunt aperiam, ab illum ducimus.</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <h6>About Us</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fugiat deserunt aperiam, ab illum ducimus.</p>
+            </div>  
+          </div>
+        </div>
+        <div class="footer-copyright d-flex justify-content-center align-items-center flex-wrap">
+          <p class="footer-text m-0">
+            Copyright ©2020 All rights reserved 
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

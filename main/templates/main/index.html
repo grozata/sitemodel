@@ -1,0 +1,262 @@
+{% extends "layout/basic.html" %}
+
+{% block content %}
+
+{% load static %}
+
+    <div class="background-area photoground">
+      <!-- Bootstrap 4 -->
+      <div class="container">
+        <div id="carousel" class="carousel slide" data-ride="carousel" style="height: 862px;">
+          <!-- Индикаторы -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="img-fluid" style="height: auto;" src="{% static '/main/img/car_1.png' %}" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img class="img-fluid" style="height: 820px;" src="{% static '/main/img/car_2.png' %}" alt="...">
+            </div>
+            <div class="carousel-item">
+               <img class="img-fluid" style="height: 820px;" src="{% static '/main/img/car_3.png' %}" alt="...">
+            </div>
+          </div>
+          <!-- Элементы управления -->
+          <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Предыдущий</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Следующий</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+      
+  <section class="section-middle-1">  
+    <div class="container">
+      <div class="row shadow-inner-section-middle-1">
+
+        <div class="col-lg-3">
+          <div class="box-inner-section-middle-1">
+            <div class="img-middle-1">
+              <img src="{% static 'main/img/box_middle_3.png' %}" alt="">
+            </div>
+
+            <h6>Free Delivery</h6>
+            <p>Free Shipping on all order</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="box-inner-section-middle-1">
+            <div class="img-middle-1">
+              <img src="{% static 'main/img/box_middle_3.png' %}" alt="">
+            </div>
+            <h6>Return Policy</h6>
+            <p>Free Shipping on all order</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="box-inner-section-middle-1">
+            <div class="img-middle-1">
+              <img src="{% static 'main/img/box_middle_3.png' %}" alt="">
+            </div>
+            <h6>24/7 Support</h6>
+            <p>Free Shipping on all order</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="" style="text-align: center;">
+            <div class="img-middle-1" style="margin-bottom: 20px;">
+              <img src="{% static 'main/img/box_middle_3.png' %}" alt="">
+            </div>
+            <h6>Secure Payment</h6>
+            <p>Free Shipping on all order</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-photo">
+    <div class="container" style="margin-bottom: 50px;">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="box_photo">
+                <img src="{% static '/main/img/box_photo_1.jpg' %}" class="img-fluid w-100">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="box_photo">
+                <img src="{% static '/main/img/box_photo_3.jpg' %}" class="img-fluid w-100">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="box_photo">
+                <img src="{% static '/main/img/box_photo_3.jpg' %}" class="img-fluid w-100">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="box_photo">
+                <img src="{% static '/main/img/box_photo_2.jpg' %}" class="img-fluid w-100">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="box_photo">
+            <img src="{% static '/main/img/111.jpg' %}" class="img-fluid w-10">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="card-block">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-6 mb-3" style="text-align: center;">
+          <h1 class="logo-text">Lorem ipsum.</h1>
+          <p class="logo-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quo quis, architecto quos iusto excepturi maxime inventore tenetur. Minus, ipsa?</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 card-row-margin">
+            <a class="link-card" href="">
+              <div class="card-row-margin">
+                <img class="img-fluid w-100" src="http://127.0.0.1:8000/static/main/img/card_1.jpeg">
+              </div>
+              <p style="color: #2e2e2e;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, inventore.
+              </p>
+              <p class="price">
+                <span style="text-decoration: line-through;">$232</span>
+                <span class="price-sale">$230</span>
+              </p>
+              <div class="only-sale">-67%</div>
+            </a>
+        </div>
+        <div class="col-lg-3 card-row-margin">
+            <a class="link-card" href="">
+              <div class="card-row-margin">
+                <img class="img-fluid w-100" src="http://127.0.0.1:8000/static/main/img/card_1.jpeg">
+              </div>
+              <p style="color: #2e2e2e;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, inventore.
+              </p>
+              <p class="price">
+                <span style="text-decoration: line-through;">$232</span>
+                <span class="price-sale">$230</span>
+              </p>
+              <div class="only-sale">-67%</div>
+            </a>
+        </div>
+        <div class="col-lg-3 card-row-margin">
+            <a class="link-card" href="">
+              <div class="card-row-margin">
+                <img class="img-fluid w-100" src="http://127.0.0.1:8000/static/main/img/card_1.jpeg">
+              </div>
+              <p style="color: #2e2e2e;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, inventore.
+              </p>
+              <p class="price">
+                <span style="text-decoration: line-through;">$232</span>
+                <span class="price-sale">$230</span>
+              </p>
+              <div class="only-sale">-67%</div>
+            </a>
+        </div>
+        <div class="col-lg-3 card-row-margin">
+            <a class="link-card" href="">
+              <div class="card-row-margin">
+                <img class="img-fluid w-100" src="http://127.0.0.1:8000/static/main/img/card_1.jpeg">
+              </div>
+              <p style="color: #2e2e2e;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, inventore.
+              </p>
+              <p class="price">
+                <span style="text-decoration: line-through;">$232</span>
+                <span class="price-sale">$230</span>
+              </p>
+              <div class="only-sale">-67%</div>
+            </a>
+        </div>
+        <div class="col-lg-3 card-row-margin">
+            <a class="link-card" href="">
+              <div class="card-row-margin">
+                <img class="img-fluid w-100" src="http://127.0.0.1:8000/static/main/img/card_1.jpeg">
+              </div>
+              <p style="color: #2e2e2e;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, inventore.
+              </p>
+              <p class="price">
+                <span style="text-decoration: line-through;">$232</span>
+                <span class="price-sale">$230</span>
+              </p>
+              <div class="only-sale">-67%</div>
+            </a>
+        </div>
+        <div class="col-lg-3 card-row-margin">
+            <a class="link-card" href="">
+              <div class="card-row-margin">
+                <img class="img-fluid w-100" src="http://127.0.0.1:8000/static/main/img/card_1.jpeg">
+              </div>
+              <p style="color: #2e2e2e;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, inventore.
+              </p>
+              <p class="price">
+                <span style="text-decoration: line-through;">$232</span>
+                <span class="price-sale">$230</span>
+              </p>
+              <div class="only-sale">-67%</div>
+            </a>
+        </div>
+        <div class="col-lg-3 card-row-margin">
+            <a class="link-card" href="">
+              <div class="card-row-margin">
+                <img class="img-fluid w-100" src="http://127.0.0.1:8000/static/main/img/card_1.jpeg">
+              </div>
+              <p style="color: #2e2e2e;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, inventore.
+              </p>
+              <p class="price">
+                <span style="text-decoration: line-through;">$232</span>
+                <span class="price-sale">$230</span>
+              </p>
+              <div class="only-sale">-67%</div>
+            </a>
+        </div>
+        <div class="col-lg-3 card-row-margin">
+            <a class="link-card" href="">
+              <div class="card-row-margin">
+                <img class="img-fluid w-100" src="http://127.0.0.1:8000/static/main/img/card_1.jpeg">
+              </div>
+              <p style="color: #2e2e2e;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, inventore.
+              </p>
+              <p class="price">
+                <span style="text-decoration: line-through;">$232</span>
+                <span class="price-sale">$230</span>
+              </p>
+              <div class="only-sale">-67%</div>
+            </a>
+        </div>
+      <a class="primary-btn mx-auto mb-5" href="">
+      	Next
+      </a>
+    </div>
+  </section>
+{% endblock %} 
