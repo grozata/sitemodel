@@ -25,7 +25,7 @@
           <img src="{% static 'main/img/logo_ghost.jpg' %}" style="height: 50px;">
         </a>
         
-        <h1 class="logo-text my-auto ml-3">GHOST</h1>
+        <h1 class="logo-text my-auto ml-3" href="{% url 'main:index' %}">GHOST</h1>
         <div class="ml-auto my-auto">
           <a class="btn menu_button " href="{% url 'main:index' %}">Home</a>
           <a class="btn menu_button " href="{% url 'main:other' page='sales' %}">Sales</a>
