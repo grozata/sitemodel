@@ -30,13 +30,15 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-
+.col-first{
+  padding-right: 40px;
+}
 
 
 
 
 .background-area{
-  color: #000;
+  color: #fff;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -46,6 +48,29 @@ body {
   background-clip: border-box;
   height: 862px;
 }
+
+
+.section-for-breadcrumbs{
+  center no-repeat;
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-image: url(http://127.0.0.1:8000/static/main/img/back_main2.jpg);
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-size: cover;
+  padding-top: 65px;
+  height: 400px;
+}
+
+
+
+
+
+
 
 .photoground{
   background-image: url(http://127.0.0.1:8000/static/main/img/back_main1.jpg);
